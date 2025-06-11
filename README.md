@@ -1,4 +1,5 @@
 # High Performance Matrix Multiplication
+Authors: Cristian Palencia and Yiran Yin
 
 This project implements and analyzes various matrix-matrix multiplication (MMM) strategies on both CPU and GPU. The goal is to explore performance improvements through different optimization techniques including loop transformations, blocking, OpenMP parallelization, and CUDA acceleration using both global and shared memory.
 
