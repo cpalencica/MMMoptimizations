@@ -7,9 +7,9 @@ This project implements and analyzes various matrix-matrix multiplication (MMM) 
 
 ## Files Overview
 
-- `mmm_blocking.c` – CPU implementation of ijk MMM with optional loop blocking and configurable loop order permutations.
+- `test_mmm_block.c` – CPU implementation of ijk MMM with optional loop blocking and configurable loop order permutations.
 - `mmm_openmp.c` – CPU version with OpenMP for multithreaded parallelism.
-- `cuda_MMM.cu` – CUDA implementation featuring both global memory and shared memory kernels for GPU acceleration.
+- `cuda_mmm.cu` – CUDA implementation featuring both global memory and shared memory kernels for GPU acceleration.
 - `dense_MMM_SUMMA.c` – Distributed-memory dense matrix multiplication using MPI and OpenMP based on the SUMMA algorithm.
 
 ---
@@ -41,7 +41,7 @@ Adds multithreading to the blocked CPU version using OpenMP directives.
 
 ---
 
-### 3. CUDA MMM (`cuda_MMM.cu`)
+### 3. CUDA MMM (`cuda_mmm.cu`)
 
 A GPU-accelerated version of matrix multiplication written in CUDA. It contains:
 
@@ -94,7 +94,7 @@ Each can be compiled with standard gcc flags. OpenMP requires the appropriate fl
 ### CUDA Version
 
 Compile using nvcc:
-- `cuda_MMM.cu`
+- `cuda_mmm.cu`
 
 Then run the executable to perform GPU-based matrix multiplication and compare results.
 
